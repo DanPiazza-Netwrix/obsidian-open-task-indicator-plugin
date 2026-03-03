@@ -1,6 +1,10 @@
 # Obsidian Plugin - Open Task Indicator
 
 Obsidian plugin (https://obsidian.md/) that displays a real-time count of open action items (unchecked checkboxes) in the status bar.
+<br /><br />
+<img width="1112" height="722" alt="image" src="https://github.com/user-attachments/assets/2f62c1cc-f9d4-475c-b749-150286933bf3" />
+<br /><br />
+<img width="1112" height="722" alt="image" src="https://github.com/user-attachments/assets/b25efff4-5060-4671-9f25-12ea17c8f5b5" />
 
 ## Features
 
@@ -12,10 +16,6 @@ Obsidian plugin (https://obsidian.md/) that displays a real-time count of open a
 - **Auto-refresh** - Automatically update indicators at configurable intervals
 - **Manual Refresh** - Command to refresh indicators on demand
 - **Debug Logging** - Optional console logging for troubleshooting
-<br /><br />
-<img width="1112" height="722" alt="image" src="https://github.com/user-attachments/assets/2f62c1cc-f9d4-475c-b749-150286933bf3" />
-<br /><br />
-<img width="1112" height="722" alt="image" src="https://github.com/user-attachments/assets/b25efff4-5060-4671-9f25-12ea17c8f5b5" />
 
 ## Installation
 
