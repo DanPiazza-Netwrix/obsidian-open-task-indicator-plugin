@@ -1,0 +1,37 @@
+{
+  "name": "open-task-indicator",
+  "version": "0.1.0",
+  "description": "Display open task counts in the status bar. Counts unchecked checkboxes across your vault.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit && node esbuild.config.mjs production"
+  },
+  "keywords": [
+    "task",
+    "todo",
+    "indicator",
+    "status-bar",
+    "productivity"
+  ],
+  "author": "Dan Piazza",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanPiazza-Netwrix/obsidian-open-task-indicator-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DanPiazza-Netwrix/obsidian-open-task-indicator-plugin/issues"
+  },
+  "homepage": "https://github.com/DanPiazza-Netwrix/obsidian-open-task-indicator-plugin#readme",
+  "devDependencies": {
+    "@types/node": "16.11.6",
+    "@typescript-eslint/eslint-plugin": "5.2.0",
+    "@typescript-eslint/parser": "5.2.0",
+    "builtin-modules": "3.2.0",
+    "esbuild": "0.13.12",
+    "obsidian": "latest",
+    "tslib": "2.4.0",
+    "typescript": "4.7.4"
+  }
+}
