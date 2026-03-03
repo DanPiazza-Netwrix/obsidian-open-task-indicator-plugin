@@ -1,6 +1,6 @@
 {
   "name": "open-task-indicator",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Display open task counts in the status bar. Counts unchecked checkboxes across your vault.",
   "main": "main.js",
   "scripts": {

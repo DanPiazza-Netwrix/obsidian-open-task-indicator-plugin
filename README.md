@@ -70,7 +70,7 @@ The plugin displays task information in the status bar at the bottom of Obsidian
 
 **When tasks exist (emoji style):**
 ```
-📋 60 tasks in 8 files | 🔴 13 | 🟠 18 | 🟡 29
+📋 60 tasks in 8 files | 🔴 2 | 🟠 2 | 🟡 4
 ```
 
 **When tasks exist (simple style):**
@@ -112,13 +112,6 @@ Configure the task count thresholds for each severity level:
 Specify files and folders to exclude from scanning. One pattern per line.
 
 Default: `.obsidian`
-
-Examples:
-```
-.obsidian
-Archive/
-node_modules/
-```
 
 ### Auto Refresh Interval
 Set the interval (in milliseconds) for automatic indicator updates. Set to 0 to disable.
@@ -193,17 +186,25 @@ npm run build
 
 ### Project Structure
 ```
-.obsidian/plugins/open-task-indicator/
+.obsidian/plugins/obsidian-open-task-indicator-plugin/
 ├── src/
 │   ├── main.ts              # Plugin entry point
 │   ├── TaskScanner.ts       # Task scanning logic
 │   ├── StatusBarRenderer.ts # Status bar UI
 │   ├── Settings.ts          # Settings UI
+│   ├── SettingsValidator.ts # Settings validation logic
+│   ├── TaskModal.ts         # Task modal UI component
 │   └── types.ts             # TypeScript interfaces
+├── main.js                  # Compiled plugin output
 ├── manifest.json            # Plugin metadata
 ├── package.json             # Dependencies
 ├── tsconfig.json            # TypeScript config
 ├── esbuild.config.mjs       # Build config
+├── CLAUDE.md                # Development notes and architecture
+├── CHANGELOG.md             # Version history
+├── LICENSE                  # License file
+├── .gitignore               # Git ignore rules
+├── data.json                # Data file
 └── README.md                # This file
 ```
 
@@ -229,10 +230,6 @@ The compiled output will be in `main.js`.
 ## License
 
 MIT
-
-## Support
-
-For issues, feature requests, or questions, please refer to the Obsidian community forums or plugin documentation.
 
 ## Changelog
 

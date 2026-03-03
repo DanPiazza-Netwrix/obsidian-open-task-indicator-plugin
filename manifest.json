@@ -1,7 +1,7 @@
 {
   "id": "open-task-indicator",
   "name": "Open Task Indicator",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "minAppVersion": "0.15.0",
   "description": "Display open task counts in the status bar. Counts unchecked checkboxes across your vault.",
   "author": "Dan Piazza",
