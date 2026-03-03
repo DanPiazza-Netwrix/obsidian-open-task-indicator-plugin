@@ -94,7 +94,7 @@ Open Task Indicator is an Obsidian plugin that displays a real-time count of ope
 ## File Structure
 
 ```
-.obsidian/plugins/open-task-indicator/
+.obsidian/plugins/obsidian-open-task-indicator-plugin/
 ├── src/
 │   ├── main.ts              # Plugin entry point
 │   ├── TaskScanner.ts       # Task scanning logic
@@ -103,14 +103,17 @@ Open Task Indicator is an Obsidian plugin that displays a real-time count of ope
 │   ├── Settings.ts          # Settings UI and defaults
 │   ├── SettingsValidator.ts # Settings validation logic
 │   └── types.ts             # TypeScript interfaces
+├── main.js                  # Compiled plugin output
 ├── manifest.json            # Plugin metadata
 ├── package.json             # Dependencies
 ├── tsconfig.json            # TypeScript configuration
 ├── esbuild.config.mjs       # Build configuration
-├── README.md                # User documentation
-├── CLAUDE.md                # This file (development notes)
-├── main.js                  # Compiled output (generated)
-└── src/SidebarRenderer.ts.backup # Backup of removed sidebar code
+├── CLAUDE.md                # Development notes and architecture
+├── CHANGELOG.md             # Version history
+├── LICENSE                  # License file
+├── .gitignore               # Git ignore rules
+├── data.json                # Data file
+└── README.md                # User documentation
 ```
 
 ## Build Process
@@ -130,36 +133,21 @@ npm run build
 
 ## Testing Checklist
 
-- [x] Plugin loads without errors
-- [x] Status bar displays task count
-- [x] Task count updates in real-time as files are modified
-- [x] Modal opens when status bar is clicked
-- [x] Files in modal are clickable and open correctly
-- [x] Settings panel displays all options
-- [x] Severity threshold validation works
-- [x] Reset button restores defaults
-- [x] Ignore patterns work correctly
-- [x] Auto-refresh interval works
-- [x] Debug logging can be enabled/disabled
-- [x] Plugin works with light and dark themes
-- [x] TypeScript compiles without errors in strict mode
-- [x] Build process completes successfully
-- [x] No unnecessary console.log statements in production code
-
-## Known Limitations
-
-1. **Mobile**: Plugin is desktop-only (not tested on mobile)
-2. **Performance**: Large vaults (10,000+ files) may experience slower scans
-3. **Regex Pattern**: Only matches `- [ ]` format, not other task formats
-
-## Future Enhancements
-
-- [ ] Support for different task formats (e.g., `* [ ]`, `+ [ ]`)
-- [ ] Task filtering by tag or folder
-- [ ] Statistics and analytics
-- [ ] Custom color schemes
-- [ ] Export task list to file
-- [ ] Integration with other plugins
+- [ ] Plugin loads without errors
+- [ ] Status bar displays task count
+- [ ] Task count updates in real-time as files are modified
+- [ ] Modal opens when status bar is clicked
+- [ ] Files in modal are clickable and open correctly
+- [ ] Settings panel displays all options
+- [ ] Severity threshold validation works
+- [ ] Reset button restores defaults
+- [ ] Ignore patterns work correctly
+- [ ] Auto-refresh interval works
+- [ ] Debug logging can be enabled/disabled
+- [ ] Plugin works with light and dark themes
+- [ ] TypeScript compiles without errors in strict mode
+- [ ] Build process completes successfully
+- [ ] No unnecessary console.log statements in production code
 
 ## Debugging
 
@@ -171,40 +159,9 @@ Enable debug logging in settings to see console output:
 
 View console with: Ctrl+Shift+I (Developer Tools)
 
-## Version History
+## Submission Guidelines for Obsidian Community Plugins
 
-### v0.1.0 (Current)
-- Initial beta release
-- Real-time task counter in status bar
-- Configurable severity thresholds with validation
-- Customizable ignore patterns
-- Auto-refresh functionality
-- Modal dialog for detailed task list
-- Settings UI with organized sections
-- Debug logging support
-- Desktop-only
-
-## Submission Checklist for Obsidian Community Plugins
-
-- [x] Plugin has unique ID: `open-task-indicator`
-- [x] manifest.json is properly formatted
-- [x] README.md is comprehensive and accurate
-- [x] Plugin is desktop-only (marked in manifest)
-- [x] No external dependencies (only Obsidian API)
-- [x] Code is TypeScript with proper types
-- [x] Plugin follows Obsidian best practices
-- [x] Version is semantic (0.1.0 for beta)
-- [x] Author is credited
-- [x] License is MIT
-- [x] Plugin is tested and working
-- [x] Ready for community review
-- [x] .gitignore file created
-- [x] LICENSE file created
-- [x] CHANGELOG.md created and maintained
-- [x] package.json updated with metadata
-- [x] TypeScript strict mode enabled
-- [x] Unnecessary console.log statements removed
-- [x] GitHub repository configured
+For submission guidelines, see [Obsidian Plugin Submission Documentation](https://docs.obsidian.md/Plugins/Releasing/Submit+your+plugin)
 
 ## Important: Documentation Maintenance
 
@@ -241,7 +198,3 @@ Update these files together when bumping versions:
 1. CHANGELOG.md (add new version section)
 2. manifest.json (update "version" field)
 3. package.json (update "version" field)
-
-## Contact & Support
-
-For questions about development or future enhancements, refer to this file and the README.md.

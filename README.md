@@ -195,21 +195,21 @@ npm run build
 │   ├── main.ts              # Plugin entry point
 │   ├── TaskScanner.ts       # Task scanning logic
 │   ├── StatusBarRenderer.ts # Status bar UI
-│   ├── Settings.ts          # Settings UI
+│   ├── TaskModal.ts         # Modal dialog for task list
+│   ├── Settings.ts          # Settings UI and defaults
 │   ├── SettingsValidator.ts # Settings validation logic
-│   ├── TaskModal.ts         # Task modal UI component
 │   └── types.ts             # TypeScript interfaces
 ├── main.js                  # Compiled plugin output
 ├── manifest.json            # Plugin metadata
 ├── package.json             # Dependencies
-├── tsconfig.json            # TypeScript config
-├── esbuild.config.mjs       # Build config
+├── tsconfig.json            # TypeScript configuration
+├── esbuild.config.mjs       # Build configuration
 ├── CLAUDE.md                # Development notes and architecture
 ├── CHANGELOG.md             # Version history
 ├── LICENSE                  # License file
 ├── .gitignore               # Git ignore rules
 ├── data.json                # Data file
-└── README.md                # This file
+└── README.md                # User documentation
 ```
 
 ## Development
